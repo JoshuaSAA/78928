@@ -1,0 +1,3 @@
+[submodule "Astro"]
+	path = Astro
+	url = https://github.com/JoshuaSAA/Astro.git

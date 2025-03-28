@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+    <h1>Productos</h1>
+       {% for producto in productos %}
+        <li>{{ producto.nombre }}: ${{  producto.precio}}
+            <a href="/editar/{{ producto.nombre }}/{{producto.precio}} "> ✏️ Editar</a>
+            <a href="/eliminar/{{producto.nombre}}" onclick="return confirm('Seguro que deseas eliminar?')">&#x1F5D1; Eliminar</a>
+        </li>
+        {% endfor %}
+</body>
+</html>
